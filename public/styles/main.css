@@ -1,0 +1,161 @@
+/* 
+#F4F1DE - WHITE
+#E07A5F - RED
+#3D405B - NAVY BLUE
+#81B29A - TURQUOISE
+#F2CC8F - BEIGE
+*/
+
+body{
+    background-color: #F4F1DE;
+    color: #3D405B;
+    padding: 0% 10% 0% 10%;
+}
+
+/* anchor tag format */
+a{
+    color:#F4F1DE;
+}
+
+a:link{text-decoration: none}
+a:visited{text-decoration: none}
+a:hover{color: #F4F1DE}
+a:active{color: #F4F1DE}
+
+.noStyle{font-weight: bold}
+.noStyle:hover{text-decoration: none;}
+
+.layout-heading{
+    display: flex;
+    background-color: #3D405B;
+    align-items: center;
+    color: #F4F1DE;
+    height: 100px;
+}
+
+.layout-heading>h1{
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.layout-search{
+    width: 300px;
+}
+.search-bar{
+    font-size: 14px;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size:contain;
+    padding-left: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: none;
+    width:100px;
+}
+
+.login-logout{
+    margin: 10px;
+}
+
+.user-signup{
+    margin: 10px 20px 10px 0px;
+}
+
+.navigation{
+    display:flex;
+    justify-content: center;
+}
+
+.main-body{
+    text-align: center;
+}
+
+.btn-outline-primary{
+    background-color: #E07A5F;
+    border: #3D405B solid 2px;
+    color: #3D405B;
+    width: 150px;
+}
+
+.btn-outline-primary:hover{
+    background-color: #3D405B;
+    border: #3D405B solid 2px;
+    color: #F4F1DE;
+}
+
+.btn-outline-secondary{
+    background-color: #3D405B;
+    border: #F4F1DE solid 1px;
+    color: #F4F1DE;
+    width: 100%;
+}
+
+.btn-outline-secondary:hover{
+    background-color: #81B29A;
+    border: #F4F1DE solid 1px;
+    color: #F4F1DE;
+}
+
+.main-area{
+    background-color: #F2CC8F;
+    padding: 10px;
+}
+
+.post-container{
+    display:flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #81B29A;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: #3D405B 2px solid;
+    border-radius: 5px;
+    padding: 0px 20px 0px 20px;
+}
+
+
+/* Post Index Template */
+.post-container>.line-1{
+    /* border:black 1px solid; */
+    font-size: 12px;
+    display:flex;
+    padding: 10px 0px 5px 0px
+}
+    .place{color: #3D405B; font-weight: bold;}
+    .posted-by{color: #40574c}
+    .posted-by *{color: #40574c}
+    .posted-by *:hover{text-decoration: underline;color: #40574c}
+
+.post-container>.line-2{
+    /* border:black 1px solid; */
+    font-size: 15px;
+    padding: 0px 0px 2px 0px;
+    color: #3D405B;
+}
+
+.post-container>.line-3>a{
+    /* border:black 1px solid; */
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    color: #3D405B;
+}
+.post-container>.line-4{
+    /* border:black 1px solid; */
+    font-size: 12px;
+    color: #40574c;
+    padding: 5px 0px 10px 0px;
+    margin-left: auto;
+}
+
+.input-group{
+    width:500px;
+    margin: 0 auto;
+}
+
+.create-new-post{
+    display:flex;
+    justify-content: center;  
+    margin: 20px;  
+}

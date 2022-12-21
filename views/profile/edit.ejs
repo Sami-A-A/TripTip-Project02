@@ -1,0 +1,25 @@
+<h1>Edit Profile</h1>
+
+<form method="POST" action="/profile/update">
+    <div>
+        <label>First Name</label><br>
+        <input type="text" name="firstName" value="<%= user.firstName %>"><br>
+    </div>
+
+    <div>
+        <label>Last Name</label><br>
+        <input type="text" name="lastName" value="<%= user.lastName %>"><br>
+    </div>
+
+    <div>
+        <label>About Me</label><br>
+        <input type="text" name="aboutMe" value="<%= user.aboutMe %>">
+    </div>
+
+    <input type="hidden" name="id" value="<%= user._id %>">
+
+    <button type="submit">Update Profile</button>
+
+</form>
+
+<span><a href="/profile/delete/<%= user._id %>">Delete Account</a></span>

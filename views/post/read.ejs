@@ -1,0 +1,40 @@
+<% posts.forEach(post => { %>
+
+    <div>
+        <h1><%= post.title %></h1>
+        <% if(currentUser.username ==  post.username){ %>
+        <span><a href="/post/edit/<%= post._id %>">Edit</a></span>
+        <% } %>
+    </div>
+    <div>
+        by <%= post.username %>
+    </div>
+    <div>
+        Country: <%= post.country %>
+    </div>
+    <div>
+        City: <%= post.city %>
+    </div>
+    <div>
+        created <%= moment(post.createdAt).fromNow() %>
+    </div>
+    <div>
+        last editted <%= moment(post.updatedAt).fromNow() %></div>
+    <div>
+        <p><%= post.content %></p>
+    </div>
+
+    <div>
+        <form method="POST" action="post/read">
+            <label>Comments</label><br>
+            <input type="text" name="text">
+
+            <button type="submit">Comment</button>
+        </form> 
+    </div>
+    <div>
+        <span></span>
+    </div>
+    
+
+<% }) %>

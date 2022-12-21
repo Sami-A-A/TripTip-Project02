@@ -1,0 +1,32 @@
+{
+  "name": "Trip Tip",
+  "version": "1.0.0",
+  "description": "Travel app where users can recommend places to each other",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/sami-a/Project02.git"
+  },
+  "author": "Nazira, Nusaiba, Feras, Sami",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bootstrap-icons": "^1.10.2",
+    "country-region-dropdown-menu": "^2.4.0",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.3",
+    "jade": "^0.29.0",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.0",
+    "nodemon": "^2.0.20",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}

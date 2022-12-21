@@ -1,0 +1,39 @@
+<h1>Posts</h1>
+
+<div class="input-group">
+    <input type="search" class="search-bar form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" class="btn btn-outline-primary">Search</button>
+</div>
+
+    <% if (currentUser){ %>
+        <div class="create-new-post">
+            <a href="/post/add" class="btn btn-outline-primary btn-sm">Create New Post</a>
+        </div>
+    <% } %>
+
+<% posts.forEach(post => { %>
+
+<div class="post-container">
+
+    <div class="line-1">
+        <span class="place"><%= post.place %> </span>
+        <span class="posted-by">
+            &nbsp• Posted by 
+            <a href="/profile/<%= post.username %>">@<%= post.username %></a>
+            <%= moment(post.createdAt).fromNow() %>
+        </span>
+    </div>
+    <div class="line-2">
+        <span><%= post.country + ", " + post.city %></span>
+        <span></span>
+    </div>
+    <div class="line-3">
+        <a href="/post/detail/<%= post._id %>" class="title"><%= post.title %></a>
+    </div>
+    <div class="line-4">
+        <span>Last updated <%= moment(post.updatedAt).fromNow() %></span>
+    </div>
+
+</div>
+
+<% }) %>

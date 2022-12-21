@@ -1,0 +1,27 @@
+<form method="POST" action="/post/add" >
+
+    <div>
+        <label>Title</label><br>
+        <input type="text" name="title">
+    </div>
+
+    <div>
+        <label>Place</label><br>
+        <input type="text" name="place">
+    </div>
+
+    <div>
+        <label>Country: </label><select class="gds-cr" name="country" country-data-region-id="gds-cr-one" data-language="en">Country</select>
+        <label>City: </label><select id="gds-cr-one" name="city">Region</select>
+    </div>
+
+    <div>
+        <label>Content</label><br>
+        <input type="text" name="content">
+    </div>
+    
+    <input type="hidden" name="username" value="<%= currentUser.username %>">
+
+    <button type="submit">Create Post</button>
+    
+</form>
