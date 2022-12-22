@@ -2,10 +2,11 @@
 #F4F1DE - WHITE
 #E07A5F - RED
 #3D405B - NAVY BLUE
-#81B29A - TURQUOISE
+#99d8d8 - TURQUOISE
 #F2CC8F - BEIGE
 */
 
+/* Main body and layout template */
 body{
     background-color: #F4F1DE;
     color: #3D405B;
@@ -25,56 +26,13 @@ a:active{color: #F4F1DE}
 .noStyle{font-weight: bold}
 .noStyle:hover{text-decoration: none;}
 
-.layout-heading{
-    display: flex;
-    background-color: #3D405B;
-    align-items: center;
-    color: #F4F1DE;
-    height: 100px;
-}
-
-.layout-heading>h1{
-    margin-right: auto;
-    margin-left: 20px;
-}
-
-.layout-search{
-    width: 300px;
-}
-.search-bar{
-    font-size: 14px;
-    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size:contain;
-    padding-left: 40px;
-    background-color: #fff;
-    border: 1px solid #000;
-    box-shadow: none;
-    width:100px;
-}
-
-.login-logout{
-    margin: 10px;
-}
-
-.user-signup{
-    margin: 10px 20px 10px 0px;
-}
-
-.navigation{
-    display:flex;
-    justify-content: center;
-}
-
-.main-body{
-    text-align: center;
-}
+/* Bootstrap button tweaks */
 
 .btn-outline-primary{
     background-color: #E07A5F;
     border: #3D405B solid 2px;
     color: #3D405B;
+    margin: 0px 0px 10px 0px;
     width: 150px;
 }
 
@@ -92,9 +50,33 @@ a:active{color: #F4F1DE}
 }
 
 .btn-outline-secondary:hover{
-    background-color: #81B29A;
+    background-color: #99d8d8;
     border: #F4F1DE solid 1px;
     color: #F4F1DE;
+}
+
+
+
+/* Header CSS */
+.layout-heading{
+    display: flex;
+    background-color: #3D405B;
+    align-items: center;
+    color: #F4F1DE;
+    height: 100px;
+}
+
+.layout-heading>h1{
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.login-logout{
+    margin: 0px 10px 0px 0px;
+}
+
+.user-signup{
+    margin: 0px 20px 0px 0px;
 }
 
 .main-area{
@@ -102,11 +84,47 @@ a:active{color: #F4F1DE}
     padding: 10px;
 }
 
+.navigation{
+    display:flex;
+    justify-content: center;
+}   
+
+.layout-footer{
+    display: flex;
+    justify-content: center;
+    background-color: #3D405B;
+    align-items: center;
+    color: #F4F1DE;
+    height: 100px;
+}
+
+/* home page css */
+.hero{
+    display: flex;
+    align-content: center;
+}
+
+.img-fluid{
+    border-radius: 10px;
+    filter: brightness(60%);
+}
+
+.hero-text{
+    position: absolute;
+        left: 50%;
+        margin-left: -240px;
+    color: white;
+    text-align: center;
+    align-self: center;
+
+}
+
+/* Post Index Template */
 .post-container{
     display:flex;
     flex-direction: column;
     width: 600px;
-    background-color: #81B29A;
+    background-color: #99d8d8;
     margin: 0 auto;
     margin-bottom: 10px;
     border: #3D405B 2px solid;
@@ -114,10 +132,7 @@ a:active{color: #F4F1DE}
     padding: 0px 20px 0px 20px;
 }
 
-
-/* Post Index Template */
 .post-container>.line-1{
-    /* border:black 1px solid; */
     font-size: 12px;
     display:flex;
     padding: 10px 0px 5px 0px
@@ -128,25 +143,35 @@ a:active{color: #F4F1DE}
     .posted-by *:hover{text-decoration: underline;color: #40574c}
 
 .post-container>.line-2{
-    /* border:black 1px solid; */
     font-size: 15px;
     padding: 0px 0px 2px 0px;
     color: #3D405B;
 }
 
 .post-container>.line-3>a{
-    /* border:black 1px solid; */
     font-size: 20px;
     font-weight: bold;
     padding: 20px 0px 20px 0px;
     color: #3D405B;
 }
 .post-container>.line-4{
-    /* border:black 1px solid; */
     font-size: 12px;
     color: #40574c;
     padding: 5px 0px 10px 0px;
     margin-left: auto;
+}
+
+.search-bar{
+    font-size: 14px;
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size:contain;
+    padding-left: 40px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: none;
+    height: 40px;
 }
 
 .input-group{
@@ -154,8 +179,19 @@ a:active{color: #F4F1DE}
     margin: 0 auto;
 }
 
+#ui-id-1-button{
+    height: 34px;
+    width: 300px;
+}
+
 .create-new-post{
     display:flex;
     justify-content: center;  
-    margin: 20px;  
+    margin: 10px 10px 10px 10px;  
 }
+
+.side {
+    background: #99d8d8;
+    width: 116px;
+}
+

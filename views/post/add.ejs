@@ -1,27 +1,48 @@
-<form method="POST" action="/post/add" >
-
-    <div>
-        <label>Title</label><br>
-        <input type="text" name="title">
+<form method="POST" action="/post/add">
+</br>
+    <h1 class="text-center">Create a Post</h1>
+    </br>
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Title</span>
+        <div class="form-floating">
+            <input name="title" type="text" class="form-control" id="floatingInputGroup1" placeholder="Title">
+            <label for="floatingInputGroup1">Article Name</label>
+        </div>
     </div>
 
-    <div>
-        <label>Place</label><br>
-        <input type="text" name="place">
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Location</span>
+        <div class="form-floating">
+            <input name="city" type="text" class="form-control" id="floatingInputGroup1" placeholder="City">
+            <label for="floatingInputGroup1">City</label>
+        </div>
     </div>
 
-    <div>
-        <label>Country: </label><select class="gds-cr" name="country" country-data-region-id="gds-cr-one" data-language="en">Country</select>
-        <label>City: </label><select id="gds-cr-one" name="city">Region</select>
-    </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Place Visited</span>
+        <div class="form-floating">
+            <input name="place" type="text" class="form-control" id="floatingInputGroup1" placeholder="Place">
+            <label for="floatingInputGroup1">Landmark, etc.</label>
 
-    <div>
-        <label>Content</label><br>
-        <input type="text" name="content">
+        </div>
     </div>
     
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Country</span>
+        <div class="form-floating">
+            <select name="country" class="gds-cr gds-countryflag form-control"
+            country-data-region-id="gds-cr-1" data-language="en"></select>
+        </div>
+    </div>
+    </br>
+    <div class="input-group">
+        <span class="input-group-text side">Content</span><br>
+        <textarea class="form-control" aria-label="Content" style="height: 160px;" type="text"
+            name="content"></textarea>
+    </div>
     <input type="hidden" name="username" value="<%= currentUser.username %>">
-
-    <button type="submit">Create Post</button>
-    
+    </br>
+    <div class="text-center">
+        <button class="btn btn-outline-primary btn-lg" type="submit">Create Post</button>
+    </div>
 </form>

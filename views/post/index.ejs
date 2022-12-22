@@ -1,8 +1,12 @@
-<h1>Posts</h1>
+<h1 class="text-center">Posts</h1>
 
-<div class="input-group">
-    <input type="search" class="search-bar form-control" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
-    <button type="button" class="btn btn-outline-primary">Search</button>
+<div>
+    <form  action="/post/search" method="post">
+        <div class="input-group post-search layout-search">
+            <select name="country" class="select-country gds-cr gds-countryflag country-dropdown" country-data-region-id="gds-cr-1" data-language="en" aria-describedby="search-addon" aria-label="Search"></select>
+            <button type="submit" class="btn btn-outline-primary btn-sm">Search</button>
+        </div>
+    </form>
 </div>
 
     <% if (currentUser){ %>

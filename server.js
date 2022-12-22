@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+// const Comment = require("./models/comment");
 
 require("dotenv").config();
 
@@ -36,8 +37,9 @@ app.use(function(req,res,next) {
 const indexRoute = require("./routes/index");
 const userRoute = require("./routes/auth");
 const commentCtrl = require("./routes/comment");
-const postRoute = require("./routes/posts")
-const profileRoute = require("./routes/profile")
+const postRoute = require("./routes/posts");
+const profileRoute = require("./routes/profile");
+const commentRoute       = require("./routes/comment");
 
 
 
@@ -47,6 +49,8 @@ app.use("/",userRoute);
 app.use("/",commentCtrl);
 app.use("/", postRoute);
 app.use("/", profileRoute)
+app.use("/", commentRoute);
+
 
 
 

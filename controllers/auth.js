@@ -11,7 +11,7 @@ exports.auth_signup_get = (req,res) => {
 }
 
 exports.auth_signup_post = (req,res) => {
-    console.log(req.body)
+    console.log(req.body);
     let user = new User(req.body);
     let hash = bcrypt.hashSync(req.body.password, salt);
     console.log(hash);
@@ -42,4 +42,8 @@ exports.auth_logout_get = (req,res) => {
         res.redirect("/auth/signin");
     });
 }
+
+
+
+
 

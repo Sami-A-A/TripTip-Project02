@@ -11,6 +11,7 @@ exports.post_create_get = (req, res) => {
 // CREATE new Post
 exports.post_create_post = (req, res) => {
     let post = new Post(req.body)
+    console.log("_____________________",req.body)
     post.save()
     .then(()=>{
         res.redirect("/post/index")
@@ -73,5 +74,16 @@ exports.post_delete_get = (req,res) => {
     })
     .catch(err=>{
         console.log(err)
+    })
+}
+
+// GET Rendering Post Index Page
+exports.post_search_post = (req, res) => {
+    Post.find({country: req.body.country})
+    .then(posts => {
+        res.render("post/index", {posts, moment})
+    })
+    .catch(err => {
+        console.log(err);
     })
 }

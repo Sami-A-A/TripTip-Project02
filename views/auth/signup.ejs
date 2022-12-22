@@ -1,50 +1,75 @@
-<h1>Creat new account</h1>
-
 <form action="/auth/signup" method="POST">
+    </br>
+    <h1 class="text-center">Create a new Account</h1>
+    </br>
+    <div class="input-group mb-3">
+        <span class="input-group-text side">First Name</span>
+        <div class="form-floating">
+            <input name="firstName" type="text" class="form-control" required id="floatingInputGroup1"
+                placeholder="Name">
+            <label for="floatingInputGroup1">First Name (minimum 3 characters required)</label>
+        </div>
+    </div>
 
-    <div class="form-group">
-        <label>First name</label>
-        <input type="text" name="firstName" class="form-control" />
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Last Name</span>
+        <div class="form-floating">
+            <input name="lastName" type="text" class="form-control" required id="floatingInputGroup1"
+                placeholder="Name">
+            <label for="floatingInputGroup1">Last Name (minimum 3 characters required)</label>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Email Address</span>
+        <div class="form-floating">
+            <input name="email" type="email" class="form-control" required id="floatingInputGroup1" placeholder="Email">
+            <label for="floatingInputGroup1">Email Address</label>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Username</span>
+        <div class="form-floating">
+            <input name="username" type="text" class="form-control" required id="floatingInputGroup1"
+                placeholder="Username">
+            <label for="floatingInputGroup1">Username (minimum 5 characters required)</label>
+        </div>
     </div>
 
     <div class="form-group">
-        <label>Last name</label>
-        <input type="text" name="lastName" class="form-control" />
-    </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text side">Password</span>
+            <div class="form-floating">
+                <input name="password" type="password" class="form-control" required id="floatingInputGroup1"
+                    placeholder="Password">
+                <label for="floatingInputGroup1">Password</label>
+            </div>
+        </div>
 
-    <div class="form-group">
-        <label>email address</label>
-        <input type="email" name="email" class="form-control" />
-    </div>
+        <br>
 
-    <br>
+        <div class="form-group">
+            <div class="input-group mb-3">
+                <span class="input-group-text side">Age</span>
+                <div class="form-floating">
+                    <input name="age" type="number" class="form-control" required id="floatingInputGroup1"
+                        placeholder="Password">
+                    <label for="floatingInputGroup1">Your age</label>
+                </div>
+            </div>
 
-    <div class="form-group">
-        <label>Username</label>
-        <input type="text" name="username" class="form-control" />
-    </div>
+            <div class="input-group">
+                <span class="input-group-text side">About Me</span><br>
+                <textarea class="form-control" aria-label="Content" style="height: 120px;" type="text"
+                    name="aboutMe"></textarea>
+            </div>
 
-    <div class="form-group">
-        <label>pasword</label>
-        <input type="password" name="password" class="form-control" />
-    </div>
+            <br>
 
-    <br>
 
-    <div class="form-group">
-        <label>About Me</label>
-        <input type="text" name="aboutMe" class="form-control" />
-    </div>
-
-    <br>
-
-    <div class="form-group">
-        <label>Age</label>
-        <input type="number" name="age" class="form-control" />
-    </div>
-
-    <div>
-        <button type="submit" class="btn btn-primary">Sign Up</button>
-    </div>
+            <div>
+                <button class="btn btn-outline-primary btn-lg" type="submit">Sign Up</button>
+            </div>
 
 </form>

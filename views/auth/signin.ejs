@@ -1,20 +1,26 @@
-<h1>Sign In</h1>
-
 <form action="/auth/signin" method="POST">
-
-    <div class="form-group">
-        <label>email address</label>
-        <input type="email" name="email" class="form-control" required />
+</br>
+    <h1 class="text-center">Sign In</h1>
+</br>
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Email Address</span>
+        <div class="form-floating">
+            <input name="email" type="email" class="form-control" required id="floatingInputGroup1" placeholder="Email">
+            <label for="floatingInputGroup1">Email Address</label>
+        </div>
     </div>
 
     <div class="form-group">
-        <label>pasword</label>
-        <input type="password" name="password" class="form-control" required />
-    </div>
-
-    <br>
-
-    <div>
-        <button type="submit" class="btn btn-primary" onclick="validation()">Sign in</button>
-    </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text side">Password</span>
+            <div class="form-floating">
+                <input name="password" type="password" class="form-control" required id="floatingInputGroup1"
+                    placeholder="Password">
+                <label for="floatingInputGroup1">Password</label>
+            </div>
+        </div>
+        <br>
+        <div class="text-center">
+            <button class="btn btn-outline-primary btn-lg" type="submit"onclick="validation()">Sign in</button>
+        </div>
 </form>

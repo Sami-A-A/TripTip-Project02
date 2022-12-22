@@ -1,21 +1,24 @@
-<h1>Post Edit</h1>
-
 <form method="POST" action="/post/update">
-
-    <div>
-        <label>Title</label><br>
-        <input type="text" name="title" value="<%= post.title %>">
+</br>
+    <h1 class="text-center">Edit Post</h1>
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Article</span>
+        <div class="form-floating">
+            <input name="title" type="text" value="<%= post.title %>" class="form-control" id="floatingInputGroup1" placeholder="Title">
+            <label for="floatingInputGroup1">Artcile Name</label>
+        </div>
     </div>
-
-    <div>
-        <label>Content</label><br>
-        <input type="text" name="content" value="<%= post.content %>">
+    <div class="input-group">
+        <span class="input-group-text side">Content</span><br>
+        <textarea class="form-control" aria-label="Content" style="height: 160px;" type="text" name="content"><%= post.content %></textarea>
     </div>
-
+</br>
     <input type="hidden" name="id" value="<%= post._id %>">
 
-    <button type="submit">Submit Changes</button>
+    <div class="text-center">
+        <button class="btn btn-outline-primary btn-lg" type="submit">Submit Changes</button>
+    </div>
 
 </form>
 
-<span><a href="/post/delete/<%= post._id %>">Delete</a></span>
+<span class="btn btn-outline-primary btn-lg"><a href="/post/delete/<%= post._id %>">Delete</a></span>

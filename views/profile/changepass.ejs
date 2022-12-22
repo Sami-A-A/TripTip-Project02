@@ -1,0 +1,18 @@
+<form method="POST" action="/profile/update">
+</br>
+    <h1 class="text-center">Change Password</h1>
+</br>
+    <div class="input-group mb-3">
+        <span class="input-group-text side">Password</span>
+        <div class="form-floating">
+            <input name="password" type="password" class="form-control" id="floatingInputGroup1" placeholder="Password">
+            <label for="floatingInputGroup1">Insert New Password</label>
+        </div>
+    </div>
+
+    <input type="text" name="id" value="<%= user._id %>" hidden>
+    <div class="text-center">
+        <button class="btn btn-outline-primary btn-lg" type="submit">Change Password</button>
+    </div>
+
+</form>

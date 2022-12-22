@@ -10,6 +10,7 @@
         <th>Posts</th>
     <% if(currentUser && user.username === currentUser.username) { %>
         <th><a href="/profile/edit/<%= user.username %>">Edit</a></th>
+        <th><a href="/profile/changepass/<%= user.username %>">change password</a></th>
     <% } %>
     </tr>
 
