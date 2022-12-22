@@ -1,5 +1,5 @@
 const post = require("../models/Post");
-const Comment = require("../models/comment");
+const Comment = require("../models/Comment");
 
 
 // exports.modules.checkCommentOwnership = function(req, res, next){
