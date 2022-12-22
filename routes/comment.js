@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router({mergeParams: true});
 const Post = require("../models/Post");
-const Comment = require("../models/comment");
+const Comment = require("../models/Comment");
 const middleware = require("../middleware");
 
 
